@@ -1,0 +1,826 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+
+<!-- Mirrored from www.kder.info/page/3 by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 18 Mar 2017 09:36:16 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head profile="http://gmpg.org/xfn/11">
+
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8;" />
+<title> 可得博客</title>
+<link rel="stylesheet" href="../themes/default/style.css" type="text/css" media="screen" />
+<link rel="alternate" type="application/rss+xml" title="可得博客 RSS Feed" href="../feed" />
+<link rel="shortcut icon" href="../favicon.ico" >
+<link href="../static/wlwmanifest.xml" type="application/wlwmanifest+xml" rel="wlwmanifest"/>
+<script type="text/javascript" src="../themes/default/rounded_corners_lite.inc.js"></script>
+<script type="text/javascript" src="../../ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+
+<script type="text/JavaScript">
+window.onload = function()
+{
+settings = {
+tl: { radius: 5 },
+tr: { radius: 5 },
+bl: { radius: 5 },
+br: { radius: 5 },
+antiAlias: true,
+autoPad: true,
+validTags: ["div"]
+}
+var myBoxObject = new curvyCorners(settings, "nifty");
+myBoxObject.applyCornersToAll();
+var myBoxObject = new curvyCorners(settings, "meta");
+myBoxObject.applyCornersToAll();
+var myBoxObject = new curvyCorners(settings, "sidebar");
+myBoxObject.applyCornersToAll();
+}
+</script>
+
+<meta name="generator" content="Micolog 0.743" />
+</head>
+
+<body>
+<div id="main">
+<div id="wrapper">
+
+<div id="top">
+<div id="logo"><h1><a href="../index.html" title="可得博客">可得博客</a></h1>
+</div>
+
+<div id="menu">
+<ul>
+		<li class="current_page_item" >
+			<a  href="../index.html"  >首页</a>
+		</li>
+		<li class="page_item"><a href="../pyproxyswitch.html" target="_self">PyProxySwitch</a></li><li class="page_item"><a href="../about.html" target="_self">关于Kder</a></li>
+    <li class="page_item" ><a href="../feed">(RSS)</a></li>
+    
+
+    
+      <li>
+     
+       <a href="https://www.google.com/accounts/ServiceLogin?service=ah&amp;passive=true&amp;continue=https://appengine.google.com/_ah/conflogin%3Fcontinue%3Dhttp://www.kder.info/admin&amp;ltmpl=gm&amp;shdf=ChALEgZhaG5hbWUaBEtkZXIMEgJhaCIUBOGrstSre1JVfn4GsJvDcpl5VzUoATIUOTufZGo6z_qRRki16VX3VZ6YDRg">Login</a>
+
+     
+         </li>
+
+
+<li id="searchbox">
+
+<form method="get" id="searchform" action="http://www.google.com/search">
+		<input type="text" value="Search..." onfocus="if (this.value == 'Search...') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Search...';}" name="as_q" id="s" />
+		<input type="image" src="../themes/default/images/transparent.gif" id="go" alt="Search" title="Search" />
+		<input name="as_sitesearch" value="www.kder.info" type="hidden">
+
+		</form>
+
+</li>
+
+</ul>
+</div>
+
+</div>
+<div id="content">
+<div id="split">
+
+
+
+
+
+
+
+<div class="ctop"></div>
+<div class="box">
+<div id="post-aglzfmtkZXJocmRyDAsSBUVudHJ5GME-DA">
+<div class="nifty"><h2><a href="../windows-xp-hotfixes-batch-install.html" rel="bookmark" title="Permanent Link to 使用批处理批量安装Windows XP补丁">使用批处理批量安装Windows XP补丁</a> <span class="date">五月 3rd, 2010</span></h2></div>
+
+
+<div class="en_body">
+<p>Kder比较爱折腾，喜欢用原版的XP，当然时不时地要重装，各种补丁一大堆，一个一个手动安装？不太现实，于是就网上找了个bat脚本，可以一键安装同一目录下的所有hotfix，代码如下：</p>
+<blockquote>
+<p><code>@echo off<br /> title 系统补丁批量自动安装<br /> color 1f<br /> cls<br /> MODE con: COLS=60 LINES=25<br /> set tm1=%time:~0,2%<br /> set tm2=%time:~3,2%<br /> set tm3=%time:~6,2%<br /> ECHO %date% %tm1%点%tm2%分%tm3%秒<br /> echo 补丁安装中......<br /> echo.<br /> for %%i in (*.exe) do %%i /passive /norestart /nobackup<br /> ECHO %date% %tm1%点%tm2%分%tm3%秒<br /> echo 补丁已经全部安装完毕！<br /> echo 请按任意键重启电脑！<br /> echo ......<br /> PAUSE &gt;nul<br /> shutdown -r</code></p>
+<p><code>rem 此脚本来自：<a href="http://ishare.iask.sina.com.cn/f/7458958.html" target="_blank">http://ishare.iask.sina.com.cn/f/7458958.html</a></code></p>
+</blockquote>
+</div>
+
+<div class="meta">标签: <a href="../tag/Windows.html">Windows</a> <a href="../tag/%e7%b3%bb%e7%bb%9f.html">系统</a> <a href="../tag/%e7%bc%96%e7%a8%8b.html">编程</a> <br><br>  分类  <a href="../category/share.html">资源分享</a>  |   <a href="../windows-xp-hotfixes-batch-install.html#comments">评论(0)&#187;</a></div>
+</div>
+
+</div>
+<div class="cbottom"></div>
+<div class="space"></div>
+
+
+
+<div class="ctop"></div>
+<div class="box">
+<div id="post-aglzfmtkZXJocmRyDAsSBUVudHJ5GNo2DA">
+<div class="nifty"><h2><a href="../outlook-express-imap-gmail-0x800ccc03-solution.html" rel="bookmark" title="Permanent Link to 解决Outlook Express用IMAP收取Gmail时出现的0x800CCC03错误">解决Outlook Express用IMAP收取Gmail时出现的0x800CCC03错误</a> <span class="date">四月 22nd, 2010</span></h2></div>
+
+
+<div class="en_body">
+今天用Outlook Express的IMAP功能收Gmail的邮件，结果OE报错：未知错误0x800CCC03。后来一查，原来GOOGLE停止了对安全性能不高的SSLv2的支持，所以要换用支持TLS1/SSL3安全连接的邮件客户端。原文如下:
+
+<blockquote>Reportedly, Google stopped accepting SSLv2 connections. SSL2 has serious security problems, so you should upgrade to an email program that supports TLS1/SSL3. (SSL2 is not supported by Yahoo! or Hotmail either, but you can use it with AOL.)
+
+You can also use a program like Stunnel to provide the secure connection from your existing email program.
+
+参见：http://www.google.com/support/forum/p/gmail/thread?tid=52eb6a4211175320&hl=zh-CN</blockquote>
+
+<strong>解决方法：</strong>
+很简单，换个邮件客户端就行了，Foxmail似乎也不行（见上面的链接）。我用的Opera自带的邮件客户端，ThunderBird也可以，其他的暂不清楚。
+
+
+</div>
+
+<div class="meta">标签: <a href="../tag/Gmail.html">Gmail</a> <br><br>  分类  <a href="../category/solutions.html">解决问题</a>  |   <a href="../outlook-express-imap-gmail-0x800ccc03-solution.html#comments">评论(0)&#187;</a></div>
+</div>
+
+</div>
+<div class="cbottom"></div>
+<div class="space"></div>
+
+
+
+<div class="ctop"></div>
+<div class="box">
+<div id="post-aglzfmtkZXJocmRyDAsSBUVudHJ5GJFODA">
+<div class="nifty"><h2><a href="../google-code-terms-of-service.html" rel="bookmark" title="Permanent Link to 关于Google Code的服务条款">关于Google Code的服务条款</a> <span class="date">四月 15th, 2010</span></h2></div>
+
+
+<div class="en_body">
+上次<a href="../pypoxyswitch-warned-by-google.html">Kder的PyProxySwitch项目险些被Google删除</a>，好在有惊无险，和管理员联系了一下，删除了可疑文件，恢复了我的项目。大家以后在Google Code上遇到问题尽管给google-code-management@googlegroups.com发邮件，管理员的态度不错，效率很高。后来上网查了一下，明白为什么Google "take down"了我的项目，因为我违反了TOS（Terms of Service，服务条款）。下面这些行为会违反TOS：
+<ul>
+	<li>如果项目包含可疑文件（恶意软件、病毒、木马等等），会自动触发TOS Voilation，例如：
+Scheduled for deletion for TOS violation?
+<a href="http://groups.google.co.jp/group/google-code-hosting/browse_thread/thread/a8b772be237e1ab6"> http://groups.google.co.jp/group/google-code-hosting/browse_thread/thread/a8b772be237e1ab6
+</a></li>
+	<li>将Google Code当作了文件共享/托管工具（Generic File Hosting，例如SkyDrive等）、网盘、图床、下载站，或者外链工具。
+<blockquote>Google专门为开源软件提供托管服务，并不是你文件的“免费流量供应商”。滥用将导致Google能为真正的开源项目提供的空间减少，所以Google会停止违背TOS的project。
+（Google is not a free bandwidth provider for your files.  We are a host for open source software exclusively.Your use of the platform was abusive, and reducing our capacity to serve real open source projects. So we destroyed your project.）</blockquote>
+参见：About My Project Violation?
+<a href="http://markmail.org/message/y3tvphp5lm4zfdcf"> http://markmail.org/message/y3tvphp5lm4zfdcf</a></li>
+	<li>上传了非开源的软件。例如：
+Project is "Scheduled for deletion due to Violation of TOS"
+<a href="http://groups.google.com/group/google-code-hosting/browse_thread/thread/4b27d7aa0b4480a6/b7fa525e919cea94"> http://groups.google.com/group/google-code-hosting/browse_thread/thread/4b27d7aa0b4480a6/b7fa525e919cea94</a></li>
+不过，似乎在项目中使用别的开源项目中的二进制文件是可以的：
+<a href="http://groups.google.com/group/google-code-hosting/browse_thread/thread/25afdd276661746c/807353371957f045?lnk=gst&amp;q=binary+files#807353371957f045"> http://groups.google.com/group/google-code-hosting/browse_thread/thread/25afdd276661746c/807353371957f045?lnk=gst&amp;q=binary+files#807353371957f045</a></ul>
+</div>
+
+<div class="meta">标签: <a href="../tag/Google.html">Google</a> <a href="../tag/%e6%9c%8d%e5%8a%a1.html">服务</a> <a href="../tag/%e6%9d%82%e8%b0%88.html">杂谈</a> <br><br>  分类  <a href="../category/thought.html">经验体会</a>  |   <a href="../google-code-terms-of-service.html#comments">评论(0)&#187;</a></div>
+</div>
+
+</div>
+<div class="cbottom"></div>
+<div class="space"></div>
+
+
+
+<div class="ctop"></div>
+<div class="box">
+<div id="post-aglzfmtkZXJocmRyDAsSBUVudHJ5GPlVDA">
+<div class="nifty"><h2><a href="../junction-windows-ntfs-softlink.html" rel="bookmark" title="Permanent Link to Junction:Windows下NTFS的软链接工具">Junction:Windows下NTFS的软链接工具</a> <span class="date">四月 13th, 2010</span></h2></div>
+
+
+<div class="en_body">
+<p>用过Linux的朋友大都知道&ldquo;软链接&rdquo;的好处，ln -s使我们的工作方便了不少。其实Windows下也有类似的工具：Junction，不过只支持NTFS文件系统。</p>
+<blockquote>
+<h3>用法：</h3>
+</blockquote>
+<blockquote>
+<p><strong>创建链接</strong> <code>junction C:\link C:\somewhere\target</code></p>
+</blockquote>
+<blockquote>
+<p>支持跨越分区（目标分区不必是NTFS文件系统）  <code>junction C:\link D:\target</code></p>
+</blockquote>
+<blockquote>
+<p><strong>删除链接</strong> <code>junction -d C:\link</code></p>
+</blockquote>
+<p><a href="http://technet.microsoft.com/en-us/sysinternals/bb896768.aspx">Junction官方下载</a></p>
+<p>另可参考：<a href="http://msdn.microsoft.com/en-us/library/aa365006(VS.85).aspx">软链接(junction/soft link)和硬链接(hardlink)的区别</a></p>
+</div>
+
+<div class="meta">标签: <a href="../tag/Windows.html">Windows</a> <a href="../tag/%e7%b3%bb%e7%bb%9f.html">系统</a> <br><br>  分类  <a href="../category/share.html">资源分享</a>  |   <a href="../junction-windows-ntfs-softlink.html#comments">评论(0)&#187;</a></div>
+</div>
+
+</div>
+<div class="cbottom"></div>
+<div class="space"></div>
+
+
+
+<div class="ctop"></div>
+<div class="box">
+<div id="post-aglzfmtkZXJocmRyDAsSBUVudHJ5GKIfDA">
+<div class="nifty"><h2><a href="../pypoxyswitch-warned-by-google.html" rel="bookmark" title="Permanent Link to PyPoxySwitch项目被Google警告">PyPoxySwitch项目被Google警告</a> <span class="date">四月 10th, 2010</span></h2></div>
+
+
+<div class="en_body">
+今天收到一封Google Code的邮件，说我的<a href="../pyproxyswitch.html">PyPoxySwitch</a>项目含有恶意软件，已经被“拿下”了。原文如下：
+<blockquote>Hi pyproxyswitch project owner,
+
+We have detected malware in your project hosted on Google Code. To
+make the web safer, we have taken down your project.
+
+You must remove this malware before we can republish your
+project. More information about how to clean your computers and your
+project can be found here:
+
+<a href="http://code.google.com/p/support/wiki/FAQ#What_should_I_do_when_I_am_notified_that_my_project_contains_mal" target="_blank">http://code.google.com/p/support/wiki/FAQ#What_should_I_do_when_I_am_notified_that_my_project_contains_mal</a>
+
+Once you have fixed the problem, reply to this email to request a
+review of your project.
+
+The Google Code team</blockquote>
+我到我的项目主页上一看，赫然写着：“Scheduled for deletion due to Violation of TOS.” 天，我冤啊，自从2009-08-20项目建立一直好好的，而且2009-12-9以来我一直没更新过，怎么现在冒出个恶意软件？
+
+我用Virustotal扫了一下，果然发现了所谓的“恶意软件”：
+<blockquote>
+<table border="1">
+<tbody>
+<tr>
+<td colspan="4">文件 PyProxySwitch.zip 接收于 2010.04.10 06:50:10 (UTC)</td>
+</tr>
+<tr>
+<td>反病毒引擎</td>
+<td>版本</td>
+<td>最后更新</td>
+<td>扫描结果</td>
+</tr>
+<tr>
+<td>a-squared</td>
+<td>4.5.0.50</td>
+<td>2010.04.10</td>
+<td>-</td>
+</tr>
+<tr>
+<td>AhnLab-V3</td>
+<td>5.0.0.2</td>
+<td>2010.04.09</td>
+<td>-</td>
+</tr>
+<tr>
+<td>AntiVir</td>
+<td>7.10.6.55</td>
+<td>2010.04.09</td>
+<td style="color: red;">SPR/Tool.3212</td>
+</tr>
+<tr>
+<td>Antiy-AVL</td>
+<td>2.0.3.7</td>
+<td>2010.04.09</td>
+<td style="color: red;">Server-Proxy/Win32.3proxy.gen</td>
+</tr>
+<tr>
+<td>Authentium</td>
+<td>5.2.0.5</td>
+<td>2010.04.09</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Avast</td>
+<td>4.8.1351.0</td>
+<td>2010.04.09</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Avast5</td>
+<td>5.0.332.0</td>
+<td>2010.04.09</td>
+<td>-</td>
+</tr>
+<tr>
+<td>AVG</td>
+<td>9.0.0.787</td>
+<td>2010.04.09</td>
+<td>-</td>
+</tr>
+<tr>
+<td>BitDefender</td>
+<td>7.2</td>
+<td>2010.04.10</td>
+<td>-</td>
+</tr>
+<tr>
+<td>CAT-QuickHeal</td>
+<td>10.00</td>
+<td>2010.04.09</td>
+<td>-</td>
+</tr>
+<tr>
+<td>ClamAV</td>
+<td>0.96.0.3-git</td>
+<td>2010.04.10</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Comodo</td>
+<td>4552</td>
+<td>2010.04.10</td>
+<td style="color: red;">ApplicUnsaf.Win32.ServerProxy.3proxy.~B</td>
+</tr>
+<tr>
+<td>DrWeb</td>
+<td>5.0.2.03300</td>
+<td>2010.04.10</td>
+<td>-</td>
+</tr>
+<tr>
+<td>eSafe</td>
+<td>7.0.17.0</td>
+<td>2010.04.08</td>
+<td style="color: red;">Win32.Server.Proxy.P</td>
+</tr>
+<tr>
+<td>eTrust-Vet</td>
+<td>35.2.7418</td>
+<td>2010.04.09</td>
+<td>-</td>
+</tr>
+<tr>
+<td>F-Prot</td>
+<td>4.5.1.85</td>
+<td>2010.04.09</td>
+<td>-</td>
+</tr>
+<tr>
+<td>F-Secure</td>
+<td>9.0.15370.0</td>
+<td>2010.04.10</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Fortinet</td>
+<td>4.0.14.0</td>
+<td>2010.04.08</td>
+<td style="color: red;">Misc/3proxy</td>
+</tr>
+<tr>
+<td>GData</td>
+<td>19</td>
+<td>2010.04.10</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Ikarus</td>
+<td>T3.1.1.80.0</td>
+<td>2010.04.10</td>
+<td style="color: red;">not-a-virus:Server-Proxy.Win32.3proxy</td>
+</tr>
+<tr>
+<td>Jiangmin</td>
+<td>13.0.900</td>
+<td>2010.04.10</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Kaspersky</td>
+<td>7.0.0.125</td>
+<td>2010.04.10</td>
+<td style="color: red;">not-a-virus:Server-Proxy.Win32.3proxy.bq</td>
+</tr>
+<tr>
+<td>McAfee-GW-Edition</td>
+<td>6.8.5</td>
+<td>2010.04.09</td>
+<td style="color: red;">Riskware.Tool.3212</td>
+</tr>
+<tr>
+<td>Microsoft</td>
+<td>1.5605</td>
+<td>2010.04.10</td>
+<td style="color: red;">Program:Win32/TinyProxy</td>
+</tr>
+<tr>
+<td>NOD32</td>
+<td>5014</td>
+<td>2010.04.09</td>
+<td style="color: red;">a variant of Win32/3Proxy.O</td>
+</tr>
+<tr>
+<td>Norman</td>
+<td>6.04.11</td>
+<td>2010.04.09</td>
+<td style="color: red;">Suspicious_Gen2.ABHVU</td>
+</tr>
+<tr>
+<td>nProtect</td>
+<td>2009.1.8.0</td>
+<td>2010.04.06</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Panda</td>
+<td>10.0.2.2</td>
+<td>2010.04.09</td>
+<td style="color: red;">Trj/CI.A</td>
+</tr>
+<tr>
+<td>PCTools</td>
+<td>7.0.3.5</td>
+<td>2010.04.10</td>
+<td style="color: red;">Hacktool.Proxy</td>
+</tr>
+<tr>
+<td>Prevx</td>
+<td>3.0</td>
+<td>2010.04.10</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Rising</td>
+<td>22.42.04.03</td>
+<td>2010.04.09</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Sophos</td>
+<td>4.52.0</td>
+<td>2010.04.10</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Sunbelt</td>
+<td>6159</td>
+<td>2010.04.10</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Symantec</td>
+<td>20091.2.0.41</td>
+<td>2010.04.10</td>
+<td style="color: red;">Hacktool.Proxy</td>
+</tr>
+<tr>
+<td>TheHacker</td>
+<td>6.5.2.0.259</td>
+<td>2010.04.10</td>
+<td>-</td>
+</tr>
+<tr>
+<td>TrendMicro</td>
+<td>9.120.0.1004</td>
+<td>2010.04.10</td>
+<td style="color: red;">BKDR_AGENT.DZ</td>
+</tr>
+<tr>
+<td>VBA32</td>
+<td>3.12.12.4</td>
+<td>2010.04.09</td>
+<td>-</td>
+</tr>
+<tr>
+<td>ViRobot</td>
+<td>2010.4.10.2270</td>
+<td>2010.04.10</td>
+<td>-</td>
+</tr>
+<tr>
+<td>VirusBuster</td>
+<td>5.0.27.0</td>
+<td>2010.04.09</td>
+<td>-</td>
+</tr>
+<tr>
+<td colspan="4"></td>
+</tr>
+<tr>
+<td colspan="4">附加信息</td>
+</tr>
+<tr>
+<td colspan="4">File size: 981967 bytes</td>
+</tr>
+<tr>
+<td colspan="4">MD5...: c2a195f137c7c8f023817e961f3921f0</td>
+</tr>
+<tr>
+<td colspan="4">SHA1..: 5b8e0ce011395c63b3bc152104fbb660851549e1</td>
+</tr>
+<tr>
+<td colspan="4">SHA256: 69e63f67d511a35e16466b313a9455b11a23e8a21e99879829c57ab02c50ab08</td>
+</tr>
+<tr>
+<td colspan="4">ssdeep: 12288:kPfmm2U+XfFbI2m1EOjFCgckemc5GJVNINxUfz3C/AdE0b9p6dHtLjguz3
+yai9OZ:kPx78fy0gcks0JXIvUfm6t6n3SHGtBuS</td>
+</tr>
+<tr>
+<td colspan="4">PEiD..: -</td>
+</tr>
+<tr>
+<td colspan="4">PEInfo: -</td>
+</tr>
+<tr>
+<td colspan="4">RDS...: NSRL Reference Data Set
+-</td>
+</tr>
+<tr>
+<td colspan="4">pdfid.: -</td>
+</tr>
+<tr>
+<td colspan="4">trid..: ZIP compressed archive (100.0%)</td>
+</tr>
+<tr>
+<td colspan="4">sigcheck:
+publisher....: n/a
+copyright....: n/a
+product......: n/a
+description..: n/a
+original name: n/a
+internal name: n/a
+file version.: n/a
+comments.....: n/a
+signers......: -
+signing date.: -
+verified.....: Unsigned</td>
+</tr>
+<tr>
+<td colspan="4">Symantec Reputation Network: Suspicious.Insight http://www.symantec.com/security_response/writeup.jsp?docid=2010-021223-0550-99</td>
+</tr>
+</tbody></table>
+</blockquote>
+终于明白了，Kder做的这个项目是个快速切换代理的程序，自带了几个代理程序（3proxy,polipo,ip_relay），其中<a href="http://3proxy.ru/">3proxy</a>由于比较强大(俄国人写的)，可能有人用它作过后门代理之类的，被上面一些杀软报为Malware了。最令我哭笑不得的是卡巴居然报的是not-a-virus，3proxy和Kaspersky都是俄罗斯出的，呵呵，有照顾？
+
+这可是太可惜了，没办法，只好先把3poxy删了再说吧。
+
+可是，就是想删除文件也不那么容易。
+
+我费了九牛二虎之力也没找到怎么删除Download列表里面的文件，后来一查才知道：
+
+Google Code里的文件<strong>一旦上传，并且被人下载过，就不能删除</strong>（刚刚上传的文件，如果没被下载过就可以删除），<strong>只能标记为deprecated</strong>，或者<strong>联系管理员手动删除</strong>，不过不用担心这些文件会使你的项目空间不足，空间容量会自动增加。
+参见：<a href="http://osdir.com/ml/HostingatGoogleCode/2009-02/msg00116.html">http://osdir.com/ml/HostingatGoogleCode/2009-02/msg00116.html</a>
+<blockquote>However, once a file has been out there for a period of time and has
+been downloaded a number of times, it is too late. The file is
+already cached in many places around the internet and you can only
+deprecate it.. Don't worry about the space that it takes up, quota are
+just there to limit abuse, we are happy to increase the quota for
+legitimate OSS projects as needed.
+
+If you discover late that some file that you thought was good and that
+has been out there for a while, actually contains sensitive data or
+something, then file an issue in the "support" project and we will
+manually take the file down for you.</blockquote>
+(这里有一个如何删除GoogleCode上文件的方法，可是我试了，不行：
+Delete a file from Google Code Hosted Project
+<a href="http://www.techquark.com/2009/09/delete-file-from-google-code-hosted.html"> http://www.techquark.com/2009/09/delete-file-from-google-code-hosted.html</a> )
+
+Download里面的文件不能删，仓库里面的总该可以吧？可是……
+<blockquote>hg push
+http authorization required
+realm: Google Code Mercurial Repository
+user:
+password:
+pushing to <a href="https://pyproxyswitch.googlecode.com/hg/" target="_blank">https://pyproxyswitch.googlecode.com/hg/</a>
+searching for changes
+abort: authorization failed</blockquote>
+我移除了本地仓库里的3proxy，想把更改push到服务器的repository，却出现了上面的错误，真的无语了。
+
+于是我只好给管理员发邮件了，目前还没有回复，不过应该不难解决。
+</div>
+
+<div class="meta">标签: <a href="../tag/Google.html">Google</a> <a href="../tag/%e6%9c%8d%e5%8a%a1.html">服务</a> <br><br>  分类  <a href="../category/uncategorized.html">杂七杂八</a>  |   <a href="../pypoxyswitch-warned-by-google.html#comments">评论(0)&#187;</a></div>
+</div>
+
+</div>
+<div class="cbottom"></div>
+<div class="space"></div>
+
+
+
+<div class="ctop"></div>
+<div class="box">
+<div id="post-aglzfmtkZXJocmRyDAsSBUVudHJ5GOFdDA">
+<div class="nifty"><h2><a href="../wm61-soft-key-customize.html" rel="bookmark" title="Permanent Link to 如何自定义WM6.1桌面左右软键">如何自定义WM6.1桌面左右软键</a> <span class="date">四月 8th, 2010</span></h2></div>
+
+
+<div class="en_body">
+有Windows Mobile智能机的朋友们，难免觉得默认的今日桌面左右软键不合习惯。那么怎样修改这两个键呢？ 很简单，用任一个注册表编辑器（例如<a href="http://www.yonsm.net/read.php?428">Taskmgr</a>自带的注册表编辑器就很好用）修改如下键值：
+<blockquote>HKEY_CURRENT_USERSoftwareMicrosoftTodayKeys112
+
+（左软键）HKEY_CURRENT_USERSoftwareMicrosoftTodayKeys113
+
+（右软键）</blockquote>
+其中：
+
+Name=”Open” 默认为打开动作，一般不需要修改
+
+String=”……” 修改为你要启用软件的完整路径（用引号括起来），如日历：“WindowsCalendar.exe”。
+
+参考：<a href="http://soft.shouji56.com/article/2617.html">http://soft.shouji56.com/article/2617.html</a>
+</div>
+
+<div class="meta">标签: <a href="../tag/PPC.html">PPC</a> <a href="../tag/WM.html">WM</a> <br><br>  分类  <a href="../category/thought.html">经验体会</a>  |   <a href="../wm61-soft-key-customize.html#comments">评论(0)&#187;</a></div>
+</div>
+
+</div>
+<div class="cbottom"></div>
+<div class="space"></div>
+
+
+
+<div class="ctop"></div>
+<div class="box">
+<div id="post-aglzfmtkZXJocmRyDAsSBUVudHJ5GMllDA">
+<div class="nifty"><h2><a href="../thunder-init-task-manager-failed-solution.html" rel="bookmark" title="Permanent Link to 启动迅雷时提示Init Task Manager failed的解决办法">启动迅雷时提示Init Task Manager failed的解决办法</a> <span class="date">四月 6th, 2010</span></h2></div>
+
+
+<div class="en_body">
+<h3>原因</h3>
+出现此问题是因为系统中缺少这2个dll：msvcp71.dll和msvcr71.dl 。
+<h3>解决</h3>
+到<a href="http://zhaodll.com/">zhaodll</a>下载（或者去别的电脑上复制）这两个文件, 拷到系统文件夹（C：\Windows\system32）即可。
+</div>
+
+<div class="meta">标签: <a href="../tag/%e7%b3%bb%e7%bb%9f.html">系统</a> <br><br>  分类  <a href="../category/solutions.html">解决问题</a>  |   <a href="../thunder-init-task-manager-failed-solution.html#comments">评论(0)&#187;</a></div>
+</div>
+
+</div>
+<div class="cbottom"></div>
+<div class="space"></div>
+
+
+
+<div class="ctop"></div>
+<div class="box">
+<div id="post-aglzfmtkZXJocmRyDAsSBUVudHJ5GLFtDA">
+<div class="nifty"><h2><a href="../google-quit-china-mainland.html" rel="bookmark" title="Permanent Link to Google退出中国大陆">Google退出中国大陆</a> <span class="date">三月 23rd, 2010</span></h2></div>
+
+
+<div class="en_body">
+　　3月23日凌晨2点31分，g.cn和google.cn自动跳转至google.com.hk，欢迎语也成了：“欢迎来到谷歌搜索在中国的新家”。据美联社报道，Google将转移中国大陆的搜索引擎服务，但会继续保持大陆的其它业务服务（谷歌音乐、谷歌热榜、iGoogle等）。
+
+　　虽然一直在关注此事的进展，但这个结果多少还是有些出人意料的，Google并没有退出中国，而是退出了“中国大陆”，这应该是权衡与博弈后得出的最折中的方案了。
+
+　　g.cn，谷歌中国搜索走了，<a href="http://www.google.com/prc/report.html">Google其他服务在大陆的可访问情况</a> ，大家可随时关注，这个网页每天更新。目前的可用性是：
+<blockquote>Blocked（完全封锁）：Blogger、Sites、Youtube
+
+Partially Blocked（部分屏蔽）：Docs（https不可用）、Picasa（图片无法显示）、Groups（部分Group不能打开）
+
+No issues（正常访问）：Web、Images、Gmail、News、Ads</blockquote>
+　　Google走了，只想说“走好，以后还会回来的”。
+</div>
+
+<div class="meta">标签: <a href="../tag/Google.html">Google</a> <br><br>  分类  <a href="../category/uncategorized.html">杂七杂八</a>  |   <a href="../google-quit-china-mainland.html#comments">评论(0)&#187;</a></div>
+</div>
+
+</div>
+<div class="cbottom"></div>
+<div class="space"></div>
+
+
+
+<div class="ctop"></div>
+<div class="box">
+<div id="post-aglzfmtkZXJocmRyDAsSBUVudHJ5GIF9DA">
+<div class="nifty"><h2><a href="../move-back-to-yo2.html" rel="bookmark" title="Permanent Link to Kder的Blog迁回Yo2">Kder的Blog迁回Yo2</a> <span class="date">三月 17th, 2010</span></h2></div>
+
+
+<div class="en_body">
+今天无意中发现Yo2可以访问了，IP也是国内的了。于是就把博客迁回去了，域名没变，依然是<a href="../index.html">kder.info</a>（独立域名就是好啊~）。毕竟Yo2的服务太好了，用了那么长时间也有感情了，而且这些日子用<a href="http://ixiezi.com/">爱写字</a>感觉总是有点不习惯，怪怪的:(
+
+欢迎大家继续支持<a href="../index.html">Kder的blog（http://www.kder.info）</a>。
+</div>
+
+<div class="meta">  分类  <a href="../category/uncategorized.html">杂七杂八</a>  |   <a href="../move-back-to-yo2.html#comments">评论(0)&#187;</a></div>
+</div>
+
+</div>
+<div class="cbottom"></div>
+<div class="space"></div>
+
+
+
+<div class="ctop"></div>
+<div class="box">
+<div id="post-aglzfmtkZXJocmRyDQsSBUVudHJ5GOmEAQw">
+<div class="nifty"><h2><a href="../so-tired.html" rel="bookmark" title="Permanent Link to So tired">So tired</a> <span class="date">一月 26th, 2010</span></h2></div>
+
+
+<div class="en_body">
+<p>Yo2被墙了，真是怕啥来啥。</p>
+<p>国外有句名言：&ldquo;如果一件坏事有可能发生，那么它一定会发生&rdquo;。自从Yo2的服务器移到香港后，我就整天提心吊胆，呵呵，墙终究还是来了。</p>
+<p>我的博客经历不长，但真是命途多舛。</p>
+<p>1. 最开始，用过Baidu的空间，后来觉得限制太多，不像真正的Blog，就不用了。</p>
+<p>2. 后来发现了Blogger，真是如获至宝，相见恨晚。强大的可定制能力+可绑定域名，正是我梦寐以求的。然而好景不长，Blogger断断续续地被封了N次，用于绑定域名的ghs.google.com更是被&ldquo;赶尽杀绝&rdquo;：可用的IP寥寥无几。在换了无数次IP，经历了太多翻墙的艰辛后，我向GFW屈服了&mdash;&mdash;放弃了Blogger。毕竟，写博客是要让更多的人看到的。</p>
+<p>3. 借着帮一个朋友管理网站的机会，我在朋友的服务器上建了个WordPress。作为一台高配Server的管理员，那时的待遇肯定比VPS还爽。然后备案的问题又折腾了一阵子，不过总算安顿了几个月。&ldquo;但是&rdquo;（不想用这个词，又能怎么样呢？），突然有一天，朋友告诉我，网警通知说我博客上一篇关于Chrome代理的文章有&ldquo;问题&rdquo;，说是和某F组织有关。天啊，我冤哪，Chrome只不过是个浏览器，与那F组织可是八杆子打不着啊&hellip;&hellip;&ldquo;欲加之罪，何患无辞&rdquo;，我无语。于是，我删除了我的WordPress，这倒也没什么，最觉得过意不去的是连累了朋友，因为这件事闹大了，惊动了单位领导，朋友和几个负责网站的同事还要交罚款，甚至还要进&ldquo;学习班&rdquo;&hellip;&hellip;。</p>
+<p>4. 经过比较，我选择了Yo2作为下一站目标。然后又经历了绑定域名、备案，Yo2转移服务器、我的接入被取消，接着备案被注销，最后Yo2被墙。 　　一切都是那么连贯，那么&ldquo;自然&rdquo;。</p>
+<p>从有第一个博客算起，不过三年；但我真正&ldquo;写博&rdquo;的时间，也就一两年，断断续续，百十来篇文章，却历经了这么多&ldquo;坎坷&rdquo;。现在真的想说&ldquo;So tired&rdquo;，累了。</p>
+<p>可我不会放弃，找个地方，继续把Blog写下去。</p>
+<p><strong>2010-8-7 更新：</strong>转了一圈，yo2又502了，再次回到Google的怀抱，不过这次用的是AppEngine上的micolog了，难道这就是传说中的轮回？</p>
+</div>
+
+<div class="meta">  分类  <a href="../category/uncategorized.html">杂七杂八</a>  |   <a href="../so-tired.html#comments">评论(0)&#187;</a></div>
+</div>
+
+</div>
+<div class="cbottom"></div>
+<div class="space"></div>
+
+
+<div class="ctop"></div>
+<div class="box">
+<div class="alignleft"><a href="4.html">&laquo; Older Entries</a></div>
+<div class="alignright"><a href="2.html">&laquo; Newer Entries</a></div>
+<div class="clear"></div></div>
+<div class="cbottom"></div>
+<div class="space"></div>
+
+
+
+</div>
+<div class="sidebar">
+<ul>
+
+<li>
+	<h2>公告</h2>
+	暂时关闭评论功能，欢迎通过邮件和微博联系我：<br/>Gmail:&nbsp; kderlin （首选）<br/>
+新浪微博：kder
+</li>
+
+<li>
+	<h2>评论</h2>
+	<ul>
+        
+        <li><a href="../PyProxySwitch3.5.2-released.html#comment-117001">Kder:@PPSlove: 1.我手边没有64...</a> </li>
+        
+        <li><a href="../PyProxySwitch3.5.2-released.html#comment-116002">PPSlove:测试了http，比如代理看视频的时候，播...</a> </li>
+        
+        <li><a href="../PyProxySwitch3.5.2-released.html#comment-116001">PPSlove:另外密码如果能够用星号表示最好了，有时候...</a> </li>
+        
+        <li><a href="../PyProxySwitch3.5.2-released.html#comment-115001">PPSlove:博主好， 程序很好很强大，感谢！不过在...</a> </li>
+        
+        <li><a href="../wordpress-spaces-firefox-ie.html#comment-111001">Kder:@小木 看来是浏览器之间的兼容性问题了…...</a> </li>
+        
+	</ul>
+</li>
+
+<li>
+ <h2>分类</h2>
+  <ul>
+ 	
+  <li>	<a href="../category/share.html">资源分享(22)</a></li>
+ 	
+  <li>	<a href="../category/solutions.html">解决问题(26)</a></li>
+ 	
+  <li>	<a href="../category/thought.html">经验体会(28)</a></li>
+ 	
+  <li>	<a href="../category/uncategorized.html">杂七杂八(20)</a></li>
+ 	
+ 	</ul>
+
+</li>
+
+<li>
+<h2>链接</h2>
+<ul>
+
+<li><a href="http://pyproxyswitch.kder.info/">PyProxySwitch项目主页</a></li>
+
+<li><a href="http://xuming.net/">徐明的博客</a></li>
+
+<li><a href="http://xuming.net/">Xuming&#39;s blog</a></li>
+
+<li><a href="http://eric.cloud-mes.com/">Eric Guo&#39;s blog</a></li>
+
+<li><a href="http://weibo.com/kder">Kder的微博</a></li>
+
+
+</ul>
+</li>
+
+
+</ul>
+</div>
+
+
+
+</div>
+</div>
+</div>
+
+
+<div id="push"></div>
+<div id="footer">
+
+	<div class="footer">
+			<p class="fooleft">可得博客 由 <a href="http://xuming.net/">Micolog</a> 构建. 主题由 <a href="http://bob.my/" title="Simple">Bob</a> 提供
+		</p>
+		<p class="fooright"><a href="#top" title="Top">回页首</a></p>
+	</div>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-9499950-2']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script><!--Powered by micolog 0.743-->
+</div>
+</div>
+</body>
+
+<!-- Mirrored from www.kder.info/page/3 by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 18 Mar 2017 09:36:17 GMT -->
+</html>

@@ -1,0 +1,318 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+
+<!-- Mirrored from www.kder.info/chrome-proxy-switcher.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 18 Mar 2017 09:34:36 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head profile="http://gmpg.org/xfn/11">
+
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8;" />
+<title> Chrome代理设置真烦人，寻内置代理服务器调度+快速切换的工具 - 可得博客 </title>
+<link rel="stylesheet" href="themes/default/style.css" type="text/css" media="screen" />
+<link rel="alternate" type="application/rss+xml" title="可得博客 RSS Feed" href="feed" />
+<link rel="shortcut icon" href="favicon.ico" >
+<link href="static/wlwmanifest.xml" type="application/wlwmanifest+xml" rel="wlwmanifest"/>
+<script type="text/javascript" src="themes/default/rounded_corners_lite.inc.js"></script>
+<script type="text/javascript" src="../ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+
+<script type="text/JavaScript">
+window.onload = function()
+{
+settings = {
+tl: { radius: 5 },
+tr: { radius: 5 },
+bl: { radius: 5 },
+br: { radius: 5 },
+antiAlias: true,
+autoPad: true,
+validTags: ["div"]
+}
+var myBoxObject = new curvyCorners(settings, "nifty");
+myBoxObject.applyCornersToAll();
+var myBoxObject = new curvyCorners(settings, "meta");
+myBoxObject.applyCornersToAll();
+var myBoxObject = new curvyCorners(settings, "sidebar");
+myBoxObject.applyCornersToAll();
+}
+</script>
+
+<meta name="generator" content="Micolog 0.743" />
+</head>
+
+<body>
+<div id="main">
+<div id="wrapper">
+
+<div id="top">
+<div id="logo"><h1><a href="index.html" title="可得博客">可得博客</a></h1>
+</div>
+
+<div id="menu">
+<ul>
+		<li class="page_item" >
+			<a  href="index.html"  >首页</a>
+		</li>
+		<li class="page_item"><a href="pyproxyswitch.html" target="_self">PyProxySwitch</a></li><li class="page_item"><a href="about.html" target="_self">关于Kder</a></li>
+    <li class="page_item" ><a href="feed">(RSS)</a></li>
+    
+
+    
+      <li>
+     
+       <a href="https://www.google.com/accounts/ServiceLogin?service=ah&amp;passive=true&amp;continue=https://appengine.google.com/_ah/conflogin%3Fcontinue%3Dhttp://www.kder.info/admin&amp;ltmpl=gm&amp;shdf=ChALEgZhaG5hbWUaBEtkZXIMEgJhaCIUBOGrstSre1JVfn4GsJvDcpl5VzUoATIUOTufZGo6z_qRRki16VX3VZ6YDRg">Login</a>
+
+     
+         </li>
+
+
+<li id="searchbox">
+
+<form method="get" id="searchform" action="http://www.google.com/search">
+		<input type="text" value="Search..." onfocus="if (this.value == 'Search...') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Search...';}" name="as_q" id="s" />
+		<input type="image" src="themes/default/images/transparent.gif" id="go" alt="Search" title="Search" />
+		<input name="as_sitesearch" value="www.kder.info" type="hidden">
+
+		</form>
+
+</li>
+
+</ul>
+</div>
+
+</div>
+<div id="content">
+<div id="split">
+
+
+
+<div class="ctop"></div>
+<div class="box">
+
+
+
+<div id="post-aglzfmtkZXJocmRyDQsSBUVudHJ5GNGGAww">
+<div class="nifty"><h2><a href="chrome-proxy-switcher.html" rel="bookmark" title="Permanent Link to Chrome代理设置真烦人，寻内置代理服务器调度+快速切换的工具">Chrome代理设置真烦人，寻内置代理服务器调度+快速切换的工具</a> <span class="date">九月 1st, 2009</span></h2></div>
+<div class="en_body">
+
+<p>文章较长，想找这样工具的朋友，可直接查看Kder自己写的小软件<a title="PyProxySwitch" href="pyproxyswitch.html">PyProxySwitch</a>。</p>
+<h2>起因</h2>
+<p>如题。</p>
+<h2>经过</h2>
+<p>这个方法可以设置Chrome的代理，但是不能方便地切换代理：以如下参数启动Google chrome可以使其不使用IE的代理设置，X是我自定义的路径</p>
+<blockquote>
+<p><code>"X:\Program Files\Chrome\Application\chrome.exe" --user-data-dir="X:\User Data" --proxy-server=127.0.0.1:8080</code></p>
+</blockquote>
+<p>为了给我所有的网络程序找一个公用的快速切换代理的软件，我搜啊搜&hellip;&hellip;<!--more--> 关键词：代理级联&middot;二次代理&middot;二级代理&middot;本地代理服务器调度&middot;代理调度软件；内置服务器&middot;代理转发&middot;intercept Proxy&hellip;&hellip;</p>
+<h3>要解决这个问题，我有几个选择：</h3>
+<p>1、搜索；2 、求助； 3、自己写【见下文：<a href="pyproxyswitch.html">PyProxySwitch</a>】</p>
+<p>首先是搜索，搜到了好多：</p>
+<p style="padding-left: 30px;">ProxySwitcherLite 不支持 Internal Proxy</p>
+<p style="padding-left: 30px;">Proxy Switch &mdash;&mdash; 类似 Multiproxy，自动化，不能手动切换</p>
+<p style="padding-left: 30px;">一键切换+本地服务器调度 ProxySwitcher正是我想要的，可惜是收费的的软件&hellip;&hellip;</p>
+<p style="padding-left: 30px;">代理猎手 &mdash;&mdash; 切换、调度不方便&hellip;&hellip;</p>
+<p style="padding-left: 30px;">代理超人&mdash;&mdash;切换有些不便</p>
+<p style="padding-left: 30px;">httport</p>
+<p style="padding-left: 30px;">Flos HTTP Proxy</p>
+<p style="padding-left: 30px;">proxyExpert&mdash;&mdash;切换不方便</p>
+<p style="padding-left: 30px;">Webscarab&mdash;&mdash;不方便，不能切换</p>
+<p style="padding-left: 30px;">Multiproxy &mdash;&mdash; 不能手动切换</p>
+<p style="padding-left: 30px;">Privoxy &mdash;&mdash; 不能手动切换</p>
+<p style="padding-left: 30px;">jproxychain,sockschain</p>
+<p style="padding-left: 30px;">&hellip;&hellip;FreeCap</p>
+<p style="padding-left: 30px;">TCP2HTTP</p>
+<p style="padding-left: 30px;">还有几款不错的 共享代理软件：CCproxy、 SuperProxy、 Foxy MyProxy、 Proxycap和ProxySwitch。</p>
+<p style="padding-left: 30px;">以上软件Kder都试用了一下，免费软件中只有代理超人比较符和需要。代理专家也可以，就是切换只支持IE。</p>
+<p>&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;</p>
+<p>选来选去，还是ProxySwitcher最好（可惜是收费的~），代理超人勉强可以，花刺代理也可以，就是没有内置服务器；</p>
+<p>&nbsp;</p>
+<h2>功能需求和架构实现</h2>
+<p>我所想的（如果我自己写的话）<strong>内置服务器调度+快速切换</strong>的工具，其实对于我来说实用性应该算最强的：</p>
+<p style="text-align: left; padding-left: 30px;">1.多应用程序支持，不仅是浏览器</p>
+<p style="text-align: left; padding-left: 30px;">2.统一接口，都设置成本机的端口，只管切换就行了</p>
+<p>而曾考虑过的另一种方法，<strong>切换工具</strong>（ProxySwitcher、花刺等等）+ <strong>端口转发</strong>工具（TCP2HTTP、 HTTPort等等）的组合，可分析一下，实用性不强：</p>
+<p style="padding-left: 30px;">1.多应用程序支持问题：如何实现？切换工具不断切换本机端口，而应用程序不能及时响应，通过pac脚本的话，有些程序又不支持</p>
+<p style="padding-left: 30px;">2.接口不统一：只能实现修改IE的代理配置（有些程序又不支持）或者修改一个pac文件，而不是统一的端口</p>
+<p>要实现统一接口或者实时响应，一个可用的解决方案是：在切换软件切换代理后，以一个中间组件判断更改为哪个地址，然后将地址作为参数传递给 端口转发软件，使其本地监听端口不变，只更改向外转发的地址和端口，然后重新加载</p>
+<p>以上这个实现似乎不难，用花刺的pac就可以，我试了，自建一个http server，将花刺 的pac设置好路径，三个浏览器就都支持了！</p>
+<p>但统一接口实现了，快速切换又成问题了：pac定了，要快速切换就要能修改pac内容。花刺的做法是根据一个模板生成文件然后覆盖，在修改注册表里的pac位置（这个默认就是file协议，改成http后每换一次就会改回去，挺烦的），似乎很麻烦：需要http服务器+动态修改。动态修改可以调用命令模式的文本编辑器修改，或者事先写好几个pac文件，需要哪个就把那覆盖掉目标文件（这个似乎简单点），以后考虑一下。</p>
+<h2>结果</h2>
+<p><strong> 符合以上两个要求的软件</strong>我已经找到了，叫 Proxy Switch【注意不是ProxySwitcher，也不是Google、百度搜出来的ProxySwitch，是在sourceforge里的开源项目叫 ProxySwitch，下载下的文件名叫做pProxySwitch.exe，Google搜索只有一个结果】界面居然是波兰语的~ 好在有Google翻译，我把它不完全【英化】了一下，没敢汉化，怕不支持中文~ 需要的朋友可以给我留言，也可以直接<strong>点此下载</strong><a href="http://www.ziddu.com/download/6543942/PProxySwitch.zip.html"><strong>http://www.ziddu.com/download/6543942/PProxySwitch.zip.html</strong></a> <span style="text-decoration: line-through;">花了两天时间，问题终于解决了，我为此险些冲动的要去自己写一个Proxy Switcher&hellip;&hellip; 好了，好好用我从sf上淘来的ps吧，抽时间研究研究他的源代码，自己做一个，呵呵~</span></p>
+<h2><strong>自己动手，丰衣足食</strong></h2>
+<p>最近Kder还真的写了个符合以上要求的软件：<a title="PyProxySwitch" href="pyproxyswitch.html">PyProxySwitch</a>，一个用Python写的代理切换程序，可以为Chrome、Firefox或者其他的网络程序切换代理设置，自用感觉效果不错，目前正在完善中，详情见<a href="pyproxyswitch.html">http://www.kder.info/pyproxyswitch</a>。</p>
+<p>转载请注明：作者：<a href="index.html">Kder</a>&nbsp;[&nbsp;<a href="index.html">http://www.kder.info/</a>]&nbsp; 出处：<a href="chrome-proxy-switcher.html">http://www.kder.info/chrome-proxy-switcher.html</a></p>
+<p>更新2：2010年8月9日<br /> 更新1：2009年9月20日<br /> 初稿于2008-11-16 22:51</p>
+
+
+	
+                <h4>您也许想再看看这些:</h4>
+                  <ul>
+                
+                  <li><a href="chrome-on-cdlinux.html">CDlinux下使用Chrome</a></li>
+                
+                  <li><a href="chrome-resolving-proxy-solution.html">解决Chrome一直显示“正在解析代理服务器”的问题</a></li>
+                
+                  <li><a href="chromecacheview.html">chromecacheview：查看Chrome缓存的文件</a></li>
+                
+                  <li><a href="install-chrome-deb-package-in-arch-linux.html">在Arch Linux下安装Chrome的DEB包</a></li>
+                
+                  <li><a href="chrome-update-server-not-available-solution.html">解决Google Chrome出现“ 无法获得更新服务器” 的错误</a></li>
+                
+                </ul>
+                
+</div>
+<div class="meta">
+标签: <a href="tag/Chrome.html">Chrome</a> <br><br>  分类  <a href="category/solutions.html">解决问题</a>  | 
+
+<div style="padding:2px 0">
+Trackback:<a href='chrome-proxy-switcherbae7.html?code=aglzfmtkZXJocmRyDQsSBUVudHJ5GNGGAww'>http://www.kder.info/chrome-proxy-switcher.html?code=aglzfmtkZXJocmRyDQsSBUVudHJ5GNGGAww</a>
+</div>
+
+</div>
+
+</div>
+</div>
+<div class="cbottom"></div>
+<div class="space"></div>
+
+
+<div class="ctop"></div>
+<div class="box">
+
+<!-- You can start editing here. -->
+
+
+
+	<h3 id="comments">1 回复 &#8220;Chrome代理设置真烦人，寻内置代理服务器调度+快速切换的工具&#8221;</h3>
+
+	<ol class="commentlist">
+
+	
+
+		<li class="alt1" id="comment-77001">
+			<div class="gravatar"><img height="50" width="50" class="avatar avatar-50" src="../i1.wp.com/www.kder.info/static/images/homsar.jpg?s=50&amp;r=G&amp;d=http%3A%2F%2Fwww.kder.info%2Fstatic%2Fimages%2Fhomsar.jpeg" alt=""/></div>
+			<div class="comments"><a href="None.html" target="_blank">diggeak</a> 于 <small class="commentmetadata"><a href="#comment-77001" title="">2010-09-12  17:37</a> </small>
+
+			<br />
+
+			<p>不错，挺详细的</p>
+
+			</div>
+			<div class="clear"></div>
+
+		</li>
+
+
+
+	
+
+	</ol>
+
+
+
+
+
+
+
+</div>
+<div class="cbottom"></div>
+<div class="space"></div>
+
+
+</div>
+<div class="sidebar">
+<ul>
+
+<li>
+	<h2>公告</h2>
+	暂时关闭评论功能，欢迎通过邮件和微博联系我：<br/>Gmail:&nbsp; kderlin （首选）<br/>
+新浪微博：kder
+</li>
+
+<li>
+	<h2>评论</h2>
+	<ul>
+        
+        <li><a href="PyProxySwitch3.5.2-released.html#comment-117001">Kder:@PPSlove: 1.我手边没有64...</a> </li>
+        
+        <li><a href="PyProxySwitch3.5.2-released.html#comment-116002">PPSlove:测试了http，比如代理看视频的时候，播...</a> </li>
+        
+        <li><a href="PyProxySwitch3.5.2-released.html#comment-116001">PPSlove:另外密码如果能够用星号表示最好了，有时候...</a> </li>
+        
+        <li><a href="PyProxySwitch3.5.2-released.html#comment-115001">PPSlove:博主好， 程序很好很强大，感谢！不过在...</a> </li>
+        
+        <li><a href="wordpress-spaces-firefox-ie.html#comment-111001">Kder:@小木 看来是浏览器之间的兼容性问题了…...</a> </li>
+        
+	</ul>
+</li>
+
+<li>
+ <h2>分类</h2>
+  <ul>
+ 	
+  <li>	<a href="category/share.html">资源分享(22)</a></li>
+ 	
+  <li>	<a href="category/solutions.html">解决问题(26)</a></li>
+ 	
+  <li>	<a href="category/thought.html">经验体会(28)</a></li>
+ 	
+  <li>	<a href="category/uncategorized.html">杂七杂八(20)</a></li>
+ 	
+ 	</ul>
+
+</li>
+
+<li>
+<h2>链接</h2>
+<ul>
+
+<li><a href="http://pyproxyswitch.kder.info/">PyProxySwitch项目主页</a></li>
+
+<li><a href="http://xuming.net/">徐明的博客</a></li>
+
+<li><a href="http://xuming.net/">Xuming&#39;s blog</a></li>
+
+<li><a href="http://eric.cloud-mes.com/">Eric Guo&#39;s blog</a></li>
+
+<li><a href="http://weibo.com/kder">Kder的微博</a></li>
+
+
+</ul>
+</li>
+
+
+</ul>
+</div>
+
+
+
+</div>
+</div>
+</div>
+
+
+<div id="push"></div>
+<div id="footer">
+
+	<div class="footer">
+			<p class="fooleft">可得博客 由 <a href="http://xuming.net/">Micolog</a> 构建. 主题由 <a href="http://bob.my/" title="Simple">Bob</a> 提供
+		</p>
+		<p class="fooright"><a href="#top" title="Top">回页首</a></p>
+	</div>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-9499950-2']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script><!--Powered by micolog 0.743-->
+</div>
+</div>
+</body>
+
+<!-- Mirrored from www.kder.info/chrome-proxy-switcher.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 18 Mar 2017 09:34:39 GMT -->
+</html>

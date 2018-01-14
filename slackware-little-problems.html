@@ -1,0 +1,262 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+
+<!-- Mirrored from www.kder.info/slackware-little-problems.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 18 Mar 2017 09:36:39 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head profile="http://gmpg.org/xfn/11">
+
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8;" />
+<title> 几个Slackware小问题的解决 - 可得博客 </title>
+<link rel="stylesheet" href="themes/default/style.css" type="text/css" media="screen" />
+<link rel="alternate" type="application/rss+xml" title="可得博客 RSS Feed" href="feed" />
+<link rel="shortcut icon" href="favicon.ico" >
+<link href="static/wlwmanifest.xml" type="application/wlwmanifest+xml" rel="wlwmanifest"/>
+<script type="text/javascript" src="themes/default/rounded_corners_lite.inc.js"></script>
+<script type="text/javascript" src="../ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+
+<script type="text/JavaScript">
+window.onload = function()
+{
+settings = {
+tl: { radius: 5 },
+tr: { radius: 5 },
+bl: { radius: 5 },
+br: { radius: 5 },
+antiAlias: true,
+autoPad: true,
+validTags: ["div"]
+}
+var myBoxObject = new curvyCorners(settings, "nifty");
+myBoxObject.applyCornersToAll();
+var myBoxObject = new curvyCorners(settings, "meta");
+myBoxObject.applyCornersToAll();
+var myBoxObject = new curvyCorners(settings, "sidebar");
+myBoxObject.applyCornersToAll();
+}
+</script>
+
+<meta name="generator" content="Micolog 0.743" />
+</head>
+
+<body>
+<div id="main">
+<div id="wrapper">
+
+<div id="top">
+<div id="logo"><h1><a href="index.html" title="可得博客">可得博客</a></h1>
+</div>
+
+<div id="menu">
+<ul>
+		<li class="page_item" >
+			<a  href="index.html"  >首页</a>
+		</li>
+		<li class="page_item"><a href="pyproxyswitch.html" target="_self">PyProxySwitch</a></li><li class="page_item"><a href="about.html" target="_self">关于Kder</a></li>
+    <li class="page_item" ><a href="feed">(RSS)</a></li>
+    
+
+    
+      <li>
+     
+       <a href="https://www.google.com/accounts/ServiceLogin?service=ah&amp;passive=true&amp;continue=https://appengine.google.com/_ah/conflogin%3Fcontinue%3Dhttp://www.kder.info/admin&amp;ltmpl=gm&amp;shdf=ChALEgZhaG5hbWUaBEtkZXIMEgJhaCIUBOGrstSre1JVfn4GsJvDcpl5VzUoATIUOTufZGo6z_qRRki16VX3VZ6YDRg">Login</a>
+
+     
+         </li>
+
+
+<li id="searchbox">
+
+<form method="get" id="searchform" action="http://www.google.com/search">
+		<input type="text" value="Search..." onfocus="if (this.value == 'Search...') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Search...';}" name="as_q" id="s" />
+		<input type="image" src="themes/default/images/transparent.gif" id="go" alt="Search" title="Search" />
+		<input name="as_sitesearch" value="www.kder.info" type="hidden">
+
+		</form>
+
+</li>
+
+</ul>
+</div>
+
+</div>
+<div id="content">
+<div id="split">
+
+
+
+<div class="ctop"></div>
+<div class="box">
+
+
+
+<div id="post-aglzfmtkZXJocmRyDQsSBUVudHJ5GNmtAww">
+<div class="nifty"><h2><a href="slackware-little-problems.html" rel="bookmark" title="Permanent Link to 几个Slackware小问题的解决">几个Slackware小问题的解决</a> <span class="date">六月 25th, 2009</span></h2></div>
+<div class="en_body">
+
+<p><strong>［本文</strong><strong>实践环境为 </strong><strong>Slackware 12.2 + Xfce］</strong></p>
+<p><strong>问题：</strong>如何让程序随xfce自动启动 <strong></strong></p>
+<p><strong>解决方案：</strong>终端启动 xfce4-autostart-editor&nbsp; ， scim输入法也可以在这里设置自启动  <strong></strong></p>
+<p><strong>问题：</strong>如何设置Locale <strong></strong></p>
+<p><strong>解决方案：</strong>在~/.profile中设置，例如 export LANG=zh_CN.gbk</p>
+<p><strong>问题：</strong>设置为中文locale之后，启动mousepad之类的程序特别慢，开始还以为是locale的原因，后来查明是每次启动gtk程序的时候都会调用scim输入法，而退出程序后输入法也退出了，所以每次启动都很慢 <strong></strong></p>
+<p><strong>解决方案：</strong>用xfce4-autostart-editor让scim -d 随xfce系统启动  <strong></strong></p>
+<p><strong>问题</strong>： 每次手动设置～/.xinitrc后，例如export 变量、设置输入法启动等等，startx都是一闪而过（x默认的窗口管理器是xfce，用xwmconfig设置的），后查明，原来每次启动x都要调用 /etc/X11/xinit/xinitrc.xfce这个文件，其中包含了启动xfce的过程，如启动session、panel等等，手动设 置.xinitrc后，因.xinitrc优先级比/etc/X11/xinit/xinitrc.xfce高，后者被override了，所以不再执行 xinitrc.xfce中的内容，而执行.xinitrc，如果其中只有export或者输入法之类的程序，当然屏幕就一闪而过了。 <strong></strong></p>
+<p><strong>解决方案：</strong>启动程序在xfce4-autostart-editor 中设置，export变量在~/.profile中设置  <strong></strong></p>
+<p><strong>问题</strong>：自带的Terminal程序不能使用（不能输入任何字符） <strong></strong></p>
+<p><strong>解决方案：</strong>root权限执行： chsh -s /usr/bin/bash &lt;username&gt; 参考：http://www.linuxsir.com/bbs/thread347458.html</p>
+<p><strong>问题</strong>：Terminal没有彩色显示文件名 <strong></strong></p>
+<p><strong>解决方案：</strong>~/.bashrc里加入： alias ls='ls -F --color=auto' alias ll='ls -l -h --color=auto' alias la='ls -A --color=auto'</p>
+<p>参考：http://www.linuxsir.org/bbs/thread263743.htm</p>
+<p>http://www.macfans.com.cn/viewthread.php?tid=34827&amp;highlight=Terminal%2B%B2%CA%C9%AB</p>
+<p>转载请注明&nbsp;&nbsp;&nbsp; 作者：<a href="http://kder.yo2.cn/">Kder</a> 出处：<a href="slackware-little-problems.html">http://www.kder.info/slackware-little-problems.html</a></p>
+
+
+	
+                <h4>您也许想再看看这些:</h4>
+                  <ul>
+                
+                  <li><a href="scim-make-gtk-slow.html">解决SCIM导致GTK程序启动缓慢的问题</a></li>
+                
+                  <li><a href="linux-terminal-del-key.html">解决Linux Terminal下delete键不起作用的问题</a></li>
+                
+                  <li><a href="how-to-clear-linux-log.html">如何清除Linux系统日志</a></li>
+                
+                  <li><a href="install-chrome-deb-package-in-arch-linux.html">在Arch Linux下安装Chrome的DEB包</a></li>
+                
+                  <li><a href="not-need-to-redownload-packages-when-reinstalling-ubuntu.html">重装Ubuntu，不必再重新下载更新软件包</a></li>
+                
+                </ul>
+                
+</div>
+<div class="meta">
+标签: <a href="tag/Linux.html">Linux</a> <a href="tag/Slackware.html">Slackware</a> <br><br>  分类  <a href="category/solutions.html">解决问题</a>  | 
+
+<div style="padding:2px 0">
+Trackback:<a href='slackware-little-problemsab53.html?code=aglzfmtkZXJocmRyDQsSBUVudHJ5GNmtAww'>http://www.kder.info/slackware-little-problems.html?code=aglzfmtkZXJocmRyDQsSBUVudHJ5GNmtAww</a>
+</div>
+
+</div>
+
+</div>
+</div>
+<div class="cbottom"></div>
+<div class="space"></div>
+
+
+<div class="ctop"></div>
+<div class="box">
+
+<!-- You can start editing here. -->
+
+
+
+
+
+
+
+
+
+</div>
+<div class="cbottom"></div>
+<div class="space"></div>
+
+
+</div>
+<div class="sidebar">
+<ul>
+
+<li>
+	<h2>公告</h2>
+	暂时关闭评论功能，欢迎通过邮件和微博联系我：<br/>Gmail:&nbsp; kderlin （首选）<br/>
+新浪微博：kder
+</li>
+
+<li>
+	<h2>评论</h2>
+	<ul>
+        
+        <li><a href="PyProxySwitch3.5.2-released.html#comment-117001">Kder:@PPSlove: 1.我手边没有64...</a> </li>
+        
+        <li><a href="PyProxySwitch3.5.2-released.html#comment-116002">PPSlove:测试了http，比如代理看视频的时候，播...</a> </li>
+        
+        <li><a href="PyProxySwitch3.5.2-released.html#comment-116001">PPSlove:另外密码如果能够用星号表示最好了，有时候...</a> </li>
+        
+        <li><a href="PyProxySwitch3.5.2-released.html#comment-115001">PPSlove:博主好， 程序很好很强大，感谢！不过在...</a> </li>
+        
+        <li><a href="wordpress-spaces-firefox-ie.html#comment-111001">Kder:@小木 看来是浏览器之间的兼容性问题了…...</a> </li>
+        
+	</ul>
+</li>
+
+<li>
+ <h2>分类</h2>
+  <ul>
+ 	
+  <li>	<a href="category/share.html">资源分享(22)</a></li>
+ 	
+  <li>	<a href="category/solutions.html">解决问题(26)</a></li>
+ 	
+  <li>	<a href="category/thought.html">经验体会(28)</a></li>
+ 	
+  <li>	<a href="category/uncategorized.html">杂七杂八(20)</a></li>
+ 	
+ 	</ul>
+
+</li>
+
+<li>
+<h2>链接</h2>
+<ul>
+
+<li><a href="http://pyproxyswitch.kder.info/">PyProxySwitch项目主页</a></li>
+
+<li><a href="http://xuming.net/">徐明的博客</a></li>
+
+<li><a href="http://xuming.net/">Xuming&#39;s blog</a></li>
+
+<li><a href="http://eric.cloud-mes.com/">Eric Guo&#39;s blog</a></li>
+
+<li><a href="http://weibo.com/kder">Kder的微博</a></li>
+
+
+</ul>
+</li>
+
+
+</ul>
+</div>
+
+
+
+</div>
+</div>
+</div>
+
+
+<div id="push"></div>
+<div id="footer">
+
+	<div class="footer">
+			<p class="fooleft">可得博客 由 <a href="http://xuming.net/">Micolog</a> 构建. 主题由 <a href="http://bob.my/" title="Simple">Bob</a> 提供
+		</p>
+		<p class="fooright"><a href="#top" title="Top">回页首</a></p>
+	</div>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-9499950-2']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script><!--Powered by micolog 0.743-->
+</div>
+</div>
+</body>
+
+<!-- Mirrored from www.kder.info/slackware-little-problems.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 18 Mar 2017 09:36:40 GMT -->
+</html>

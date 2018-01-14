@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>可得博客</title>
+	<atom:link href="http://www.kder.info/feed" rel="self" type="application/rss+xml" />
+	<link>http://www.kder.info</link>
+	<description>Kder的软件·志|网·游记</description>
+	<lastBuildDate>Sat, 26 Mar 2011 08:34:48 +0000</lastBuildDate>
+	<language>zh-cn</language>
+	<sy:updatePeriod>daily</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>Micolog 0.743</generator>
+		<item>
+		<title>PyProxySwitch3.5.2发布，修复启动时找不到模块问题</title>
+		<link>http://www.kder.info/PyProxySwitch3.5.2-released.html</link>
+		<comments>http://www.kder.info/PyProxySwitch3.5.2-released.html#comments</comments>
+		<pubDate>Sat, 26 Mar 2011 08:34:48 +0000</pubDate>
+		<dc:creator>Kder</dc:creator>
+				<category><![CDATA[解决问题 ]]></category>
+<category><![CDATA[经验体会 ]]></category>
+
+
+		<guid isPermaLink="false">http://www.kder.info/?p=103001</guid>
+		<description><![CDATA[]]></description>
+			<content:encoded><![CDATA[<p>3.5.2版本更新记录：</p>
+<p>修复Windows版本启动时找不到模块的问题；修正一个Python3.2相关的input问题；修复一个路径相关的问题。</p>
+<p>项目主页：<a rel="nofollow" href="http://pyproxyswitch.kder.info/" target="_blank">http://pyproxyswitch.kder.info/</a><br /> 下载地址：<a rel="nofollow" href="https://sourceforge.net/projects/pyproxyswitch/" target="_blank">https://sourceforge.net/projects/pyproxyswitch/</a><br /> 系统需求：<a rel="nofollow" href="http://pyproxyswitch.kder.info/documentation/system-requirement" target="_blank">http://pyproxyswitch.kder.info/documentation/system-requirement</a></p>
+<p>&nbsp;</p>
+
+<h4>相关阅读</h4>
+<ul>
+    
+    <li><a href="http://www.kder.info/PyProxySwitch-351.html">PyProxySwitch3.5.1发布</a></li>
+    
+    <li><a href="http://www.kder.info/pyproxyswitch-3.5-released.html">增加图形界面批量添加代理功能：PyProxySwitch3.5发布</a></li>
+    
+    <li><a href="http://www.kder.info/pyproxyswitch-3.3.1-released.html">新增图形设置界面，PyProxySwitch 3.3.1发布</a></li>
+    
+    <li><a href="http://www.kder.info/batch-terminate-processes.html">用bat脚本批量结束进程</a></li>
+    
+    <li><a href="http://www.kder.info/PyProxySwitch-2.0-released.html">PyProxySwitch(PPS)2.0发布</a></li>
+    
+</ul>
+<p>本文网址:<a href="http://www.kder.info/PyProxySwitch3.5.2-released.html">http://www.kder.info/PyProxySwitch3.5.2-released.html</a></p>
+]]></content:encoded>
+			<wfw:commentRss>http://www.kder.info/feed/comments</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item><item>
+		<title>PyProxySwitch3.5.1发布</title>
+		<link>http://www.kder.info/PyProxySwitch-351.html</link>
+		<comments>http://www.kder.info/PyProxySwitch-351.html#comments</comments>
+		<pubDate>Sat, 05 Mar 2011 15:54:40 +0000</pubDate>
+		<dc:creator>Kder</dc:creator>
+				<category><![CDATA[经验体会 ]]></category>
+
+
+		<guid isPermaLink="false">http://www.kder.info/?p=100001</guid>
+		<description><![CDATA[]]></description>
+			<content:encoded><![CDATA[<p>此版本主要完善了中文支持和调整目录结构。</p>
+<p>更新记录：</p>
+<ul>
+<li>Windows版本去掉3proxy支持（因3proxy被多个杀软报告为危险程序）；</li>
+<li>完善对中文路径的支持；</li>
+<li>清理目录结构，针对不同平台优化打包策略，使bin目录更加清晰；</li>
+<li>对于windows版本，为生成的exe文件添加版本信息；</li>
+<li>修复iprelay无法启动的bug。</li>
+</ul>
+<p>项目主页：<a style="color: #0000cc;" rel="nofollow" href="http://pyproxyswitch.kder.info/">http://pyproxyswitch.kder.info/</a><br />
+下载地址：<a style="color: #0000cc;" rel="nofollow" href="https://sourceforge.net/projects/pyproxyswitch/">https://sourceforge.net/projects/pyproxyswitch/</a></p>
+
+
+<h4>相关阅读</h4>
+<ul>
+    
+    <li><a href="http://www.kder.info/PyProxySwitch3.5.2-released.html">PyProxySwitch3.5.2发布，修复启动时找不到模块问题</a></li>
+    
+    <li><a href="http://www.kder.info/pyproxyswitch-3.5-released.html">增加图形界面批量添加代理功能：PyProxySwitch3.5发布</a></li>
+    
+    <li><a href="http://www.kder.info/pyproxyswitch-3.3.1-released.html">新增图形设置界面，PyProxySwitch 3.3.1发布</a></li>
+    
+    <li><a href="http://www.kder.info/repair-python-file-association.html">用bat恢复python文件关联和图标</a></li>
+    
+    <li><a href="http://www.kder.info/batch-terminate-processes.html">用bat脚本批量结束进程</a></li>
+    
+</ul>
+<p>本文网址:<a href="http://www.kder.info/PyProxySwitch-351.html">http://www.kder.info/PyProxySwitch-351.html</a></p>
+]]></content:encoded>
+			<wfw:commentRss>http://www.kder.info/feed/comments</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item><item>
+		<title>增加图形界面批量添加代理功能：PyProxySwitch3.5发布</title>
+		<link>http://www.kder.info/pyproxyswitch-3.5-released.html</link>
+		<comments>http://www.kder.info/pyproxyswitch-3.5-released.html#comments</comments>
+		<pubDate>Wed, 02 Mar 2011 14:34:00 +0000</pubDate>
+		<dc:creator>Kder</dc:creator>
+				<category><![CDATA[经验体会 ]]></category>
+
+
+		<guid isPermaLink="false">http://www.kder.info/?p=99001</guid>
+		<description><![CDATA[]]></description>
+			<content:encoded><![CDATA[<p>此版本主要变化是增加了图形界面批量添加代理的功能，另外【注意】，此版本配置文件有所变化，与前面的版本不兼容，需要覆盖或者全新安装。</p>
+<p>更新记录详见： <a title="Changelog" href="http://pyproxyswitch.kder.info/changelog">http://pyproxyswitch.kder.info/changelog</a></p>
+<p>项目主页：<a style="color: #0000cc;" rel="nofollow" href="http://pyproxyswitch.kder.info/">http://pyproxyswitch.kder.info/</a><br /> 下载地址：<a style="color: #0000cc;" rel="nofollow" href="https://sourceforge.net/projects/pyproxyswitch/">https://sourceforge.net/projects/pyproxyswitch/</a></p>
+
+<h4>相关阅读</h4>
+<ul>
+    
+    <li><a href="http://www.kder.info/PyProxySwitch3.5.2-released.html">PyProxySwitch3.5.2发布，修复启动时找不到模块问题</a></li>
+    
+    <li><a href="http://www.kder.info/PyProxySwitch-351.html">PyProxySwitch3.5.1发布</a></li>
+    
+    <li><a href="http://www.kder.info/pyproxyswitch-3.3.1-released.html">新增图形设置界面，PyProxySwitch 3.3.1发布</a></li>
+    
+    <li><a href="http://www.kder.info/batch-terminate-processes.html">用bat脚本批量结束进程</a></li>
+    
+    <li><a href="http://www.kder.info/PyProxySwitch-2.0-released.html">PyProxySwitch(PPS)2.0发布</a></li>
+    
+</ul>
+<p>本文网址:<a href="http://www.kder.info/pyproxyswitch-3.5-released.html">http://www.kder.info/pyproxyswitch-3.5-released.html</a></p>
+]]></content:encoded>
+			<wfw:commentRss>http://www.kder.info/feed/comments</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item><item>
+		<title>新增图形设置界面，PyProxySwitch 3.3.1发布</title>
+		<link>http://www.kder.info/pyproxyswitch-3.3.1-released.html</link>
+		<comments>http://www.kder.info/pyproxyswitch-3.3.1-released.html#comments</comments>
+		<pubDate>Tue, 22 Feb 2011 08:18:54 +0000</pubDate>
+		<dc:creator>Kder</dc:creator>
+				<category><![CDATA[经验体会 ]]></category>
+
+
+		<guid isPermaLink="false">http://www.kder.info/?p=96001</guid>
+		<description><![CDATA[]]></description>
+			<content:encoded><![CDATA[<p>（PyProxySwitch（PPS）是我用Python写的一个代理切换程序，详见<a href="/pyproxyswitch">关于PyProxySwitch</a>）</p>
+<p>好久没有更新了，这次发布最大的变化是为PyProxySwitch增加了图形界面的配置对话框，主要的更新记录如下：</p>
+<ul>
+<li>增加图形界面配置工具；完善国际化支持；改进架构</li>
+<li>改用JSON作为配置格式；清理目录结构</li>
+<li>更新配置文件结构；增加一个配置文件示例PPS.conf.example；完善中文支持</li>
+<li>重构代码，去除了大部分不必要的全局变量，使代码更加模块化</li>
+</ul>
+<p>项目主页：<a style="color: #0000cc;" rel="nofollow" href="http://pyproxyswitch.kder.info/">http://pyproxyswitch.kder.info/</a><br /> 下载地址：<a style="color: #0000cc;" rel="nofollow" href="https://sourceforge.net/projects/pyproxyswitch/">https://sourceforge.net/projects/pyproxyswitch/</a></p>
+
+<h4>相关阅读</h4>
+<ul>
+    
+    <li><a href="http://www.kder.info/PyProxySwitch3.5.2-released.html">PyProxySwitch3.5.2发布，修复启动时找不到模块问题</a></li>
+    
+    <li><a href="http://www.kder.info/PyProxySwitch-351.html">PyProxySwitch3.5.1发布</a></li>
+    
+    <li><a href="http://www.kder.info/pyproxyswitch-3.5-released.html">增加图形界面批量添加代理功能：PyProxySwitch3.5发布</a></li>
+    
+    <li><a href="http://www.kder.info/repair-python-file-association.html">用bat恢复python文件关联和图标</a></li>
+    
+    <li><a href="http://www.kder.info/batch-terminate-processes.html">用bat脚本批量结束进程</a></li>
+    
+</ul>
+<p>本文网址:<a href="http://www.kder.info/pyproxyswitch-3.3.1-released.html">http://www.kder.info/pyproxyswitch-3.3.1-released.html</a></p>
+]]></content:encoded>
+			<wfw:commentRss>http://www.kder.info/feed/comments</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item><item>
+		<title>用bat批量修改文件夹权限</title>
+		<link>http://www.kder.info/batch-change-folder-permissions.html</link>
+		<comments>http://www.kder.info/batch-change-folder-permissions.html#comments</comments>
+		<pubDate>Wed, 03 Nov 2010 12:41:45 +0000</pubDate>
+		<dc:creator>Kder</dc:creator>
+				<category><![CDATA[经验体会 ]]></category>
+
+
+		<guid isPermaLink="false">http://www.kder.info/?p=85001</guid>
+		<description><![CDATA[]]></description>
+			<content:encoded><![CDATA[<p>由于安装软件使用的管理员，平时用的普通用户，经常遇到普通User访问两个用户共用的文件（如文档、代码等）时出现权限问题（无法修改或删除），于是Kder写了很简单的一个批处理，将如下一行代码保存为cacls_f.bat:<br /> <code>cacls %1 /T /G Users:F</code><br /> 然后以管理员权限登录系统，将要更改权限的文件夹拖动到cacls_f.bat上，即可将此目录下所有文件和文件夹的权限改为普通用户完全控制。这样就可以省去好多权限的麻烦了。</p>
+
+<h4>相关阅读</h4>
+<ul>
+    
+    <li><a href="http://www.kder.info/move-back-to-yo2.html">Kder的Blog迁回Yo2</a></li>
+    
+    <li><a href="http://www.kder.info/so-tired.html">So tired</a></li>
+    
+    <li><a href="http://www.kder.info/pyproxyswitch">PyProxySwitch</a></li>
+    
+    <li><a href="http://www.kder.info/merger-of-yo2-and-blogcn.html">Yo2和BlogCN合并了</a></li>
+    
+    <li><a href="http://www.kder.info/about">关于Kder</a></li>
+    
+</ul>
+<p>本文网址:<a href="http://www.kder.info/batch-change-folder-permissions.html">http://www.kder.info/batch-change-folder-permissions.html</a></p>
+]]></content:encoded>
+			<wfw:commentRss>http://www.kder.info/feed/comments</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item><item>
+		<title>用bat恢复python文件关联和图标</title>
+		<link>http://www.kder.info/repair-python-file-association.html</link>
+		<comments>http://www.kder.info/repair-python-file-association.html#comments</comments>
+		<pubDate>Sun, 31 Oct 2010 06:40:42 +0000</pubDate>
+		<dc:creator>Kder</dc:creator>
+				<category><![CDATA[经验体会 ]]></category>
+
+
+		<guid isPermaLink="false">http://www.kder.info/?p=84001</guid>
+		<description><![CDATA[]]></description>
+			<content:encoded><![CDATA[<p>由于重装系统或者其他原因可能导致Python的打开方式、文件关联和图标不正常，于是kder写了个批处理脚本，可以一键修复上述问题（假设Python为2.6版本，安装在F盘）：</p>
+<p><code>assoc .py=Python.Script<br /> assoc .pyw=Python.Script.NoConsole<br /> ftype Python.Script="F:\Python26\python.exe" "%%1" %%*<br /> ftype Python.Script.NoConsole="F:\Python26\pythonw.exe" "%%1" %%*</code></p>
+<p>将以上代码保存为py_assoc.bat，双击执行即可。</p>
+
+<h4>相关阅读</h4>
+<ul>
+    
+    <li><a href="http://www.kder.info/PyProxySwitch-351.html">PyProxySwitch3.5.1发布</a></li>
+    
+    <li><a href="http://www.kder.info/pyproxyswitch-3.3.1-released.html">新增图形设置界面，PyProxySwitch 3.3.1发布</a></li>
+    
+    <li><a href="http://www.kder.info/pyqt-resource-typeerror-solution.html">解决PyQt编译资源文件时的TypeError错误</a></li>
+    
+</ul>
+<p>本文网址:<a href="http://www.kder.info/repair-python-file-association.html">http://www.kder.info/repair-python-file-association.html</a></p>
+]]></content:encoded>
+			<wfw:commentRss>http://www.kder.info/feed/comments</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item><item>
+		<title>EverNote第三方开源客户端列表</title>
+		<link>http://www.kder.info/evernote-opensource-clients.html</link>
+		<comments>http://www.kder.info/evernote-opensource-clients.html#comments</comments>
+		<pubDate>Tue, 05 Oct 2010 08:22:54 +0000</pubDate>
+		<dc:creator>Kder</dc:creator>
+				<category><![CDATA[资源分享 ]]></category>
+
+
+		<guid isPermaLink="false">http://www.kder.info/?p=83001</guid>
+		<description><![CDATA[]]></description>
+			<content:encoded><![CDATA[<p>Evernote官方的windows客户端基于.Net，在一些低配置机器上运行起来比较吃力，而且目前还没有官方的Linux客户端，但由于Evernote开放了API，第三方客户端也就应运而生：</p>
+<p>首先，个人最推荐的，功能最完善的就是Nevernote了，基于Java，基本实现了官方客户端所有的功能，跨平台（支持Windows/Linux/MacOS），资源消耗比较大（默认情况下内存占用150M左右）。主页：http://nevernote.sourceforge.net&nbsp;</p>
+<p>然后是En4j，这个界面比较简单，也是基于Java，跨平台。下载：http://kenai.com/projects/en4j/downloads</p>
+<p>下面是两个命令行版的Evernote客户端，都叫Clevernote，巧了：</p>
+<ul>
+<li>基于Python : http://github.com/dvj/clevernote</li>
+<li>基于Java : http://code.google.com/p/clevernote</li>
+</ul>
+<p>还有两个简单的小工具：&nbsp;</p>
+<ul>
+<li>PolActions&nbsp;（For Mac）从文本文件创建笔记并直接上传到EverNote服务器：http://code.google.com/p/polactions/</li>
+<li>Entrap&nbsp;用于简单地记一行笔记（one line note）:https://code.google.com/p/entrap/</li>
+</ul>
+<p>另外这几个仅仅建立了项目，并没有源码或安装包的下载，列在这里充数吧:</p>
+<p>http://code.google.com/p/evernote-air/</p>
+<p>http://notecmd.svn.sourceforge.net/viewvc/notecmd/</p>
+<p>http://code.google.com/p/evernotecl/</p>
+
+<p>本文网址:<a href="http://www.kder.info/evernote-opensource-clients.html">http://www.kder.info/evernote-opensource-clients.html</a></p>
+]]></content:encoded>
+			<wfw:commentRss>http://www.kder.info/feed/comments</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item><item>
+		<title>用bat脚本批量结束进程</title>
+		<link>http://www.kder.info/batch-terminate-processes.html</link>
+		<comments>http://www.kder.info/batch-terminate-processes.html#comments</comments>
+		<pubDate>Mon, 04 Oct 2010 13:34:24 +0000</pubDate>
+		<dc:creator>Kder</dc:creator>
+				<category><![CDATA[经验体会 ]]></category>
+
+
+		<guid isPermaLink="false">http://www.kder.info/?p=81001</guid>
+		<description><![CDATA[]]></description>
+			<content:encoded><![CDATA[<p>由于Kder的机器配置比较寒酸，运行大游戏之前要结束一些暂时没用的进程，想方设法挤出些系统资源。在任务管理器一个个手动结束显然不现实，于是写了个批处理脚本，就一行：</p>
+<p>for /f %%i in (procs.txt) do taskkill /f /im %%i</p>
+<p>保存为term-procs.bat。</p>
+<p>然后新建一个procs.txt文件，把要结束的进程每个一行保存到procs.txt里，例如：</p>
+<p>wmiprvse.exe<br />rapimgr.exe<br />ApntEx.exe<br />GoogleUpdate.exe<br />wcescomm.exe<br />Apoint.exe<br />wdfmgr.exe</p>
+<p>然后双击term-procs.bat就可以了。</p>
+
+<h4>相关阅读</h4>
+<ul>
+    
+    <li><a href="http://www.kder.info/PyProxySwitch3.5.2-released.html">PyProxySwitch3.5.2发布，修复启动时找不到模块问题</a></li>
+    
+    <li><a href="http://www.kder.info/PyProxySwitch-351.html">PyProxySwitch3.5.1发布</a></li>
+    
+    <li><a href="http://www.kder.info/pyproxyswitch-3.5-released.html">增加图形界面批量添加代理功能：PyProxySwitch3.5发布</a></li>
+    
+    <li><a href="http://www.kder.info/pyproxyswitch-3.3.1-released.html">新增图形设置界面，PyProxySwitch 3.3.1发布</a></li>
+    
+    <li><a href="http://www.kder.info/PyProxySwitch-2.0-released.html">PyProxySwitch(PPS)2.0发布</a></li>
+    
+</ul>
+<p>本文网址:<a href="http://www.kder.info/batch-terminate-processes.html">http://www.kder.info/batch-terminate-processes.html</a></p>
+]]></content:encoded>
+			<wfw:commentRss>http://www.kder.info/feed/comments</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item><item>
+		<title>PyProxySwitch(PPS)2.0发布</title>
+		<link>http://www.kder.info/PyProxySwitch-2.0-released.html</link>
+		<comments>http://www.kder.info/PyProxySwitch-2.0-released.html#comments</comments>
+		<pubDate>Sat, 14 Aug 2010 05:41:13 +0000</pubDate>
+		<dc:creator>Kder</dc:creator>
+				
+
+		<guid isPermaLink="false">http://www.kder.info/?p=68001</guid>
+		<description><![CDATA[]]></description>
+			<content:encoded><![CDATA[<p>这是新的PyProxySwitch，从PPS 2.0开始，代码转由Python3编写，界面库也由wxPython转到了PyQt。原1.x系列的PPS（基于Python2.x+wxPython）在Google Code上，下载和用法说明请见：<a href="http://code.google.com/p/pyproxyswitch/">http://code.google.com/p/pyproxyswitch/</a></p>
+<p>PPS2的项目主页：<a href="http://pyproxyswitch.kder.info/">http://pyproxyswitch.kder.info/</a></p>
+<p>下载地址：<a href="https://sourceforge.net/projects/pyproxyswitch/">https://sourceforge.net/projects/pyproxyswitch/</a></p>
+<h3>2.0版系统要求：</h3>
+<ul>
+<li>Windows版本可以直接运行(Windows Vista 32位下测试通过)</li>
+<li>源代码版本运行环境需要Python3以上+PyQt4以上</li>
+</ul>
+<p>注：PPS2.0 Windows版暂时不支持中文路径，2.0源码版和1.1.1 Windows/源码版均支持。功能上2.0和1.1差别不大，如果需要中文路径支持的可暂时不必升级。</p>
+
+<h4>相关阅读</h4>
+<ul>
+    
+    <li><a href="http://www.kder.info/PyProxySwitch3.5.2-released.html">PyProxySwitch3.5.2发布，修复启动时找不到模块问题</a></li>
+    
+    <li><a href="http://www.kder.info/PyProxySwitch-351.html">PyProxySwitch3.5.1发布</a></li>
+    
+    <li><a href="http://www.kder.info/pyproxyswitch-3.5-released.html">增加图形界面批量添加代理功能：PyProxySwitch3.5发布</a></li>
+    
+    <li><a href="http://www.kder.info/pyproxyswitch-3.3.1-released.html">新增图形设置界面，PyProxySwitch 3.3.1发布</a></li>
+    
+    <li><a href="http://www.kder.info/batch-terminate-processes.html">用bat脚本批量结束进程</a></li>
+    
+</ul>
+<p>本文网址:<a href="http://www.kder.info/PyProxySwitch-2.0-released.html">http://www.kder.info/PyProxySwitch-2.0-released.html</a></p>
+]]></content:encoded>
+			<wfw:commentRss>http://www.kder.info/feed/comments</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item><item>
+		<title>解决PyQt编译资源文件时的TypeError错误</title>
+		<link>http://www.kder.info/pyqt-resource-typeerror-solution.html</link>
+		<comments>http://www.kder.info/pyqt-resource-typeerror-solution.html#comments</comments>
+		<pubDate>Wed, 11 Aug 2010 13:08:15 +0000</pubDate>
+		<dc:creator>Kder</dc:creator>
+				<category><![CDATA[解决问题 ]]></category>
+
+
+		<guid isPermaLink="false">http://www.kder.info/?p=66001</guid>
+		<description><![CDATA[]]></description>
+			<content:encoded><![CDATA[<p>今天用pyrcc4编译qrc资源文件时遇到了如下错误：</p>
+<blockquote><p>Traceback (most recent call last):<br />
+&nbsp;File "F:\Work\pps-qt\PPS_QT.py", line 20, in &lt;module&gt;<br />
+&nbsp;&nbsp; import pps_qrc<br />
+&nbsp;File "F:\Work\pps-qt\pps_qrc.py", line 78, in &lt;module&gt;<br />
+&nbsp;&nbsp; qInitResources()<br />
+&nbsp;File "F:\Work\pps-qt\pps_qrc.py", line 73, in qInitResources<br />
+&nbsp;&nbsp; QtCore.qRegisterResourceData(0x01, qt_resource_struct, qt_resource_name, qt_<br />
+resource_data)<br />
+TypeError: qRegisterResourceData(int, str, str, str): argument 2 has unexpected type 'str'</p></blockquote>
+<div>
+<div>
+<p>奇怪，以前用着还好，怎么突然就不行了，Google一下，发现stackoverflow上有人提到：</p>
+<blockquote><p>pyrcc generates Python 2.x code by default.</p>
+<p>Try regenerating your resource files using pyrcc with flag '-py3'</p></blockquote>
+</div>
+<p><strong>错误原因：</strong></p>
+<p>原来我最近把Python升级到了3.1，而pyrcc默认生成的代码是Python2.x的，从而造成了不兼容。</p>
+<p><strong>解决办法：</strong></p>
+<p>把编译命令后面加上-py3，如</p>
+<p><code>pyrcc4.exe -py3 some.qrc -o someqrc.py</code></p>
+<p>果然成功了，问题解决。附参考网址：</p>
+<p>http://stackoverflow.com/questions/1619574/pyqt-problems-using-pyqts-resource-system/1658244#1658244</p>
+</div>
+
+
+<h4>相关阅读</h4>
+<ul>
+    
+    <li><a href="http://www.kder.info/PyProxySwitch3.5.2-released.html">PyProxySwitch3.5.2发布，修复启动时找不到模块问题</a></li>
+    
+    <li><a href="http://www.kder.info/PyProxySwitch-351.html">PyProxySwitch3.5.1发布</a></li>
+    
+    <li><a href="http://www.kder.info/pyproxyswitch-3.5-released.html">增加图形界面批量添加代理功能：PyProxySwitch3.5发布</a></li>
+    
+    <li><a href="http://www.kder.info/pyproxyswitch-3.3.1-released.html">新增图形设置界面，PyProxySwitch 3.3.1发布</a></li>
+    
+    <li><a href="http://www.kder.info/repair-python-file-association.html">用bat恢复python文件关联和图标</a></li>
+    
+</ul>
+<p>本文网址:<a href="http://www.kder.info/pyqt-resource-typeerror-solution.html">http://www.kder.info/pyqt-resource-typeerror-solution.html</a></p>
+]]></content:encoded>
+			<wfw:commentRss>http://www.kder.info/feed/comments</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+	</channel>
+</rss>
